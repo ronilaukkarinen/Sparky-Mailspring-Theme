@@ -142,11 +142,30 @@ font-weight: 400;
   box-shadow: unset;
 }
 
-.thread-list-narrow .icons-column,
 .mail-important-icon {
   display: none !important;
 }
 
 .list-tabular .list-column {
-  padding: 0 12px 0 18px !important;
+  padding: 0 10px 0 0px !important;
+}
+
+.thread-list .thread-icon.thread-icon-unread {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background-image: none !important;
+  background-color: transparent !important;
+  -webkit-mask-image: none !important;
+}
+
+.thread-list .thread-icon.thread-icon-unread::before {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  content: '';
+  background-color: #007aff;
+  align-self: center;
+  justify-self: center;
+  display: block;
 }
